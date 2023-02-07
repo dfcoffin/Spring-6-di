@@ -3,21 +3,19 @@ package guru.springframework.spring6di.controllers;
 import guru.springframework.spring6di.GreetingServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * @author Donald F. Coffin
  */
+@SpringBootTest
 class ConstructorInjectedControllerTest {
 
+	@Autowired
 	ConstructorInjectedController controller;
-
-	@BeforeEach
-	void setup() throws Exception {
-		controller = new ConstructorInjectedController(new GreetingServiceImpl());
-
-	}
 
 	@Test
 	void sayHello() {
