@@ -1,7 +1,6 @@
 package guru.springframework.spring6di.controllers;
 
-import guru.springframework.spring6di.GreetingService;
-import guru.springframework.spring6di.GreetingServiceImpl;
+import guru.springframework.spring6di.services;
 import org.springframework.stereotype.Controller;
 
 /**
@@ -10,10 +9,10 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class MyController {
 
-	private final GreetingService greetingService;
+	private final services.GreetingService greetingService;
 
 	public MyController() {
-		this.greetingService = new GreetingServiceImpl();
+		this.greetingService = new services.GreetingServiceImpl();
 	}
 
 	public String sayHello() {

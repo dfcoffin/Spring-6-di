@@ -1,6 +1,6 @@
 package guru.springframework.spring6di.controllers;
 
-import guru.springframework.spring6di.GreetingService;
+import guru.springframework.spring6di.services;
 import org.springframework.stereotype.Controller;
 
 /**
@@ -8,9 +8,9 @@ import org.springframework.stereotype.Controller;
  */
 @Controller
 public class ConstructorInjectedController {
-	private final GreetingService greetingService;
+	private final services.GreetingService greetingService;
 
-	public ConstructorInjectedController(GreetingService greetingService) {
+	public ConstructorInjectedController(services.GreetingService greetingService) {
 		this.greetingService = greetingService;
 	}
 

@@ -1,6 +1,6 @@
 package guru.springframework.spring6di.controllers;
 
-import guru.springframework.spring6di.GreetingService;
+import guru.springframework.spring6di.services;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
@@ -11,9 +11,9 @@ import org.springframework.stereotype.Controller;
 public class SetterInjectedController {
 
 	@Autowired
-	private GreetingService greetingService;
+	private services.GreetingService greetingService;
 
-	public void setGreetingService(GreetingService greetingService) {
+	public void setGreetingService(services.GreetingService greetingService) {
 		this.greetingService = greetingService;
 	}
 
