@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * @author Donald F. Coffin
  */
-@ActiveProfiles("EN")
+//@ActiveProfiles("EN")
 @SpringBootTest
 class myi18NControllerTestEN {
 
